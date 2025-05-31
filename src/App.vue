@@ -1,9 +1,11 @@
 <script setup>
-import NavBar from './components/NavBar.vue';
-import Footer from './components/Footer.vue';
+import NavBar from './components/NavBar.vue'
+import Footer from './components/Footer.vue'
+import Produtos from './components/Produtos.vue';
 </script>
 
 <template>
+    <Produtos/>
     <div class="flex flex-col min-h">
         <NavBar />
     <div class="main-container mx-auto px-4 py-6">
