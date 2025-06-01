@@ -1,33 +1,29 @@
 <template>
-    <div>
-        <h1>Produtos</h1>
-        <table>
-            <td>Nome</td>
-            <td>Preço</td>
-            <td>Tipo</td>
-        </table>
-    </div>
+  <div>
+    <table border="1">
+      <tbody>
+        <tr v-for="produto in result.products" :key="produto.id">
+          <td>{{ produto.title }}</td>
+          <td>{{ produto.price }}</td>
+          <td>{{ produto.category }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
+
 <script>
-
-import vue from 'vue';
+import { ref } from 'vue'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
 
-Vue.use(VueAxios, axios);
-export default{
-    name: "Produtos", 
+export default {
+  setup() {
+    const result = ref({ products: [] })
 
-    data()
-    {
-        return{produtos:underfined}
-    },
+    axios.get('https://dummyjson.com/products')
+      .then(response => result.value = response.data)
 
-    mounted(){
-        vue.axios.get('https://dummyjson.com/products')
-        this.produtos.resp.data.data
-        .then(res => res.json())
-        .then(console.log);
-        }
-    }
+    return { result }
+  }
+}
 </script>
