@@ -7,4 +7,4 @@ Instruções:
 
 Prints:
 
-Link do video de showcase do projeto:
+Link da apresentação do projeto:
