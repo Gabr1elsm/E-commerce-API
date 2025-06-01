@@ -5,8 +5,8 @@ Descrição do projeto: Este é um catalogo de E-commerce que utiliza VueJS, Tai
 
 Instruções
 1- Acesse o link do GitHub para baixar o código.
-2- Acesse o path do código e digite CMD
-3- digite no CMD o comando "npm run dev"
+2- Acesse o path do código e digite cmd.
+3- digite no cmd o comando "npm run dev".
 4- Acesse o link https disponibilizado.
 
 Prints:
