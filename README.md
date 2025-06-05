@@ -12,3 +12,6 @@ Instruções
 Prints:
 
 Link da apresentação do projeto:
+
+Aluno: Gabriel Simonetti Marconato
+RA: 1960685
